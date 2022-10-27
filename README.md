@@ -1,9 +1,7 @@
-# Portfolio
-My personal portfolio
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Portfolio
+My personal portfolio
 
 > This is My personal portfolio project, I'm starting off with HTML and CSS and I plan to add more features to this repository in the future and eventually use it as my main portfolio!
 

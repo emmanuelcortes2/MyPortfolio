@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 600px;
-  background-image: url(/images/image_geometry.svg);
+  background-image: url(./images/image_geometry.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
