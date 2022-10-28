@@ -71,8 +71,8 @@ body {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-
 }
+
 .sub-div {
   background-color: rgba(26, 34, 54, 1);
   color: white;
@@ -173,7 +173,6 @@ body {
   padding-left: 15%;
   margin: 3%;
   padding-top: 10%;
- 
   padding-bottom: 15%;
 }
 
@@ -190,7 +189,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: right;
-  background-color:rgba(226, 80, 92, 1);
+  background-color: rgba(226, 80, 92, 1);
 }
 
 #skills {
@@ -199,7 +198,6 @@ body {
   background-position: bottom;
   background-position-x: right;
   background-color: rgba(254, 191, 82, 1);
-  ;
 }
 
 .languages h2 {
