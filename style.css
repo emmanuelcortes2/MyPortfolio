@@ -71,6 +71,7 @@ body {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+
 }
 .sub-div {
   background-color: rgba(26, 34, 54, 1);
@@ -86,6 +87,10 @@ body {
 
 .subtitle {
   padding-top: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 80%;
+  letter-spacing: 0.05em;
 }
 
 .project1 {
@@ -128,4 +133,75 @@ body {
   background-position-x: 95%;
   background-position-y: 50%;
   padding-right: 25px;
+}
+
+.cvbtn {
+  background-color: rgba(26, 34, 54, 1);
+  background-image: url(./images/ic_download.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 80%;
+  height: 50px;
+  width: 288px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15%;
+}
+
+.cvbtn:hover {
+  border-style: 1px solid;
+  border-color: rgba(26, 34, 54, 1);
+  color: rgba(26, 34, 54, 1);
+  background-color: white;
+}
+
+.about {
+  padding-bottom: 10%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  padding-left: 15%;
+  margin: 3%;
+  padding-top: 10%;
+ 
+  padding-bottom: 15%;
+}
+
+#languages {
+  background-image: url(./images/ic_languages_mob.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: right;
+  background-color: rgba(28, 82, 138, 1);
+}
+
+#frameworks {
+  background-image: url(./images/Group18.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: right;
+  background-color:rgba(226, 80, 92, 1);
+}
+
+#skills {
+  background-image: url(./images/ic_skills.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: right;
+  background-color: rgba(254, 191, 82, 1);
+  ;
+}
+
+.languages h2 {
+  font-weight: 800;
 }
