@@ -44,7 +44,7 @@ body {
   padding-bottom: 20px;
 }
 
-.btn {
+.start-btn {
   align-self: center;
   background-color: rgba(26, 34, 54, 1);
   height: 50px;
@@ -55,7 +55,7 @@ body {
   font-weight: 500;
 }
 
-.btn:hover {
+.start-btn:hover {
   border-style: 1px solid;
   border-color: rgba(26, 34, 54, 1);
   color: rgba(26, 34, 54, 1);
@@ -140,14 +140,16 @@ body {
   background-image: url(./images/ic_download.svg);
   background-repeat: no-repeat;
   background-position-y: center;
-  background-position-x: 80%;
+  background-position-x: 75%;
   height: 50px;
   width: 288px;
   font-family: 'Poppins', sans-serif;
   color: white;
   font-size: 16px;
   font-weight: 500;
-  margin-left: 15%;
+  text-align: left;
+  padding-left: 20%;
+  margin: 0 auto;
 }
 
 .cvbtn:hover {
@@ -158,6 +160,8 @@ body {
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 10%;
 }
 
@@ -202,4 +206,15 @@ body {
 
 .languages h2 {
   font-weight: 800;
+}
+
+footer {
+  background-color: #1a2236;
+}
+
+footer > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 
 }
