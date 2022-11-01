@@ -143,15 +143,21 @@
 
     </section>
     
-    <form action="" method="post">
-        <h2 class="form-heading">Get Started</h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et eius mollitia quod. Inventore et, saepe suscipit eum blanditiis modi, est iusto totam obcaecati vitae aliquam? Optio explicabo illo repellat?</p>
+    <form class="about" action="" method="post">
+        <h2 class="title">Get Started</h2>
+        <p class="presentation"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et eius mollitia quod. Inventore et, saepe suscipit eum blanditiis modi, est iusto totam obcaecati vitae aliquam? Optio explicabo illo repellat?</p>
         <ul>
             <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
+                <input type="text" id="name" placeholder="Your name" name="user_name" />
+            </li>
+            <li>
+                <input type="text" placeholder="Your email">
+            </li>
+            <li>
+                <textarea name="text" cols="30" rows="10" placeholder="Enter your message"></textarea>
             </li>
         </ul>
+        <button class="start-btn" type="submit">Start collaboration</button>
      </form>
   
 </body>

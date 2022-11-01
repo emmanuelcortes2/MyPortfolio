@@ -216,5 +216,29 @@ footer > ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  padding: 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(249, 249, 250, 1);
+}
+
+form > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+input[type=text] {
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 80%;
+  border-radius: 4px;
 }
