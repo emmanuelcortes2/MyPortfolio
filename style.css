@@ -242,3 +242,10 @@ textarea {
   width: 80%;
   border-radius: 4px;
 }
+
+
+
+#shapes-bottom {
+ width: 25%;
+ height: auto;
+}
