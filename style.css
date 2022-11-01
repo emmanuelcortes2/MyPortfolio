@@ -48,7 +48,7 @@ body {
   align-self: center;
   background-color: rgba(26, 34, 54, 1);
   height: 50px;
-  width: 288px;
+  width: 85%;
   font-family: 'Poppins', sans-serif;
   color: white;
   font-size: 16px;
@@ -208,23 +208,16 @@ body {
   font-weight: 800;
 }
 
-footer {
-  background-color: #1a2236;
-}
-
-footer > ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
-
 form {
+  margin-top: 8%;
   display: flex;
   flex-direction: column;
   background-color: rgba(249, 249, 250, 1);
+  padding-bottom: 30%;
 }
 
 form > ul {
+  padding-left: 7%;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -232,20 +225,83 @@ form > ul {
 }
 
 input[type=text] {
-  width: 80%;
-  padding-top: 10px;
+  width: 87%;
+  padding-top: 8%;
   padding-bottom: 10px;
   border-radius: 4px;
+  border-color: #dfdfe0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding-left: 3%;
+  padding-right: 0%;
+}
+
+input[type=email] {
+  width: 87%;
+  padding-top: 8%;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  border-color: #dfdfe0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding-left: 3%;
+  padding-right: 0%;
+}
+
+label {
+  position: absolute;
+  color: rgba(125, 124, 132, 1);
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  padding-left: 3%;
+  padding-top: 3%;
 }
 
 textarea {
-  width: 80%;
+  width: 87%;
   border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding-left: 3%;
+  padding-top: 3%;
+  height: 112px;
 }
 
-
-
 #shapes-bottom {
- width: 25%;
- height: auto;
+  width: 25%;
+  height: auto;
+}
+
+footer {
+  background-color: #1a2236;
+  padding-top: 8%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+footer > button {
+  font-family: 'Poppins', sans-serif;
+  color: rgba(146, 220, 220, 1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  width: 175px;
+  text-decoration: none;
+  background-color: transparent;
+  border-style: none;
+  background-image: url(./images/union-1.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position: right;
+  text-align: left;
+}
+
+footer > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  padding-left: 0%;
+  padding-right: 5%;
 }
