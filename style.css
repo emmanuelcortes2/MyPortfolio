@@ -3,8 +3,6 @@
   justify-content: space-between;
 }
 
-
-
 #hamburger {
   margin-top: 15px;
   margin-right: 16px;
@@ -307,6 +305,20 @@ body {
   font-weight: 800;
 }
 
+@media (max-width: 768px){
+  #dots {
+    display: none;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .skills {
+    display: grid;
+  
+  }
+}
+
 form {
   margin-top: 8%;
   display: flex;
@@ -323,6 +335,7 @@ form > ul {
   row-gap: 15px;
 }
 
+input[type=email],
 input[type=text] {
   width: 87%;
   padding-top: 8%;
@@ -335,17 +348,6 @@ input[type=text] {
   padding-right: 0%;
 }
 
-input[type=email] {
-  width: 87%;
-  padding-top: 8%;
-  padding-bottom: 10px;
-  border-radius: 4px;
-  border-color: #dfdfe0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-  padding-left: 3%;
-  padding-right: 0%;
-}
 
 label {
   position: absolute;
@@ -369,6 +371,89 @@ textarea {
 #shapes-bottom {
   width: 25%;
   height: auto;
+}
+
+@media (max-width: 768px){
+  .geometry-6 {
+    display: none;
+  }
+
+  .geometry-7 {
+    display: none;
+  }
+
+  #message-label {
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+  .started {
+    background-color: rgba(249, 249, 250, 1);
+  }
+
+  #shapes-bottom {
+    display: none;
+  }
+
+  .geometry-6 {
+    position: absolute;
+  }
+
+  .geometry-7 {
+    bottom: 0px;
+    right: 0px;
+  }
+
+  form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title2 {
+    text-align: center;
+    margin-left: 0px;
+    padding-left: 0%;
+  }
+ 
+  .presentation2 {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+  }
+
+  form > ul {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+    ". ."
+    ". .";
+    padding-left: 5%;
+    height: 270px;
+  }
+
+  #t-area {
+    grid-column: span 2;
+    width: 105%;
+  }
+
+  label {
+    position: relative;
+    padding-left: 0%;
+    font-size: 12px;
+  }
+
+  input[type=email],
+  input[type=text] {
+    font-size: 16px;
+  }
+
+  textarea {
+    font-size: 16px;
+  }
 }
 
 footer {
@@ -408,17 +493,21 @@ footer > ul {
 @media (min-width: 768px) {
   footer {
     display: flex;
-    height: 10px;
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
     align-items: center;
+    padding: 0%;
   }
 
   footer > ul {
-    padding-top: 0%;
-    padding-bottom: 0%;
+    padding: 2% 11%;
     column-gap: 25px;
+  }
+
+  footer > button {
+    font-size: 18px;
+    margin-left: 7%;
   }
   
 }

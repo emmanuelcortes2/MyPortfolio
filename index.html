@@ -27,7 +27,6 @@
             </ul>
         </nav>
     </header>
-    
     <section class="headline">
         <div class="hero">
           <h1 class="title">Emmanuel Cortés</h1>
@@ -150,28 +149,36 @@
                 <li>Terminal</li>
             </ul>
         </div>
+        <div id="dots">
+            <img src="./images/image_dots.svg" alt="">
+        </div>
     </section>
-    <form class="about" action="https://formspree.io/f/mknepban" method="post">
-        <img id="shapes-bottom" src="./images/shapes.svg" alt="">
-        <h2 class="title">Get Started</h2>
-        <p class="presentation">Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit, sed do eiusmod tempor
-             incididunt ut labore et dolore magna.</p>
-        <ul>
-            <li>
-                <label for="text">Your name</label>
-                <input type="text" id="name" name="user_name" required />
-            </li>
-            <li>
-                <label for="email">Your email</label>
-                <input type="email" required>
-            </li>
-            <li>
-                <textarea name="text" cols="30" rows="10" placeholder="Enter your message" maxlength="500" required></textarea>
-            </li>
-        </ul>
-        <button class="start-btn" type="submit">Start collaboration</button>
-     </form>
+    <section class="started">
+        <img class="geometry-6" src="./images/image-geometry_6.svg" height="263px" alt="">
+        <form class="about" action="https://formspree.io/f/mknepban" method="post">
+            <img id="shapes-bottom" src="./images/shapes.svg" alt="">
+            <h2 class="title title2">Get Started</h2>
+            <p class="presentation presentation2">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna.</p>
+            <ul>
+                <li>
+                    <label for="text">Your name</label>
+                    <input type="text" id="name" name="user_name" required />
+                </li>
+                <li>
+                    <label for="email">Your email</label>
+                    <input type="email" required>
+                </li>
+                <label for="message" id="message-label">Message</label>
+                <li id="t-area">
+                    <textarea name="message" cols="30" rows="10" placeholder="Enter your message" maxlength="500" required></textarea>
+                </li>
+            </ul>
+            
+            <button class="start-btn" type="submit">Start collaboration</button>
+        </form>
+    </section>
      <footer>
         <button type="button">Get my resume</button> 
         <ul>
