@@ -19,23 +19,87 @@
         <nav class="nav-bar">
             <img id="shapes" src="./images/shapes.svg" alt="">
             <img id="hamburger" src="./images/ic_menu.svg" alt="">
+            <ul class="menu">
+                <li><a href="">Hello</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    
     <section class="headline">
-        <h1 class="title">Emmanuel Cortés</h1>
-        <p class="presentation">Hello! I am a software developer! 
+        <div class="hero">
+          <h1 class="title">Emmanuel <br> Cortés</h1>
+            <p class="presentation">Hello! I am a software developer! 
             I can help you build a product, feature or website. 
             Take a look of my works.
             If you like what you see and have a project you need coded, 
             don’t hesitate and contact me.
-        </p>
-        <button class="start-btn" type="button">Start collaboration</button>
+            </p>
+            <button class="start-btn" type="button">Start collaboration</button>  
+        </div>
+        <img class="geometry" src="./images/image_geometry.svg" alt="">
+        <img class="geometry2" src="./images/image-geometry_1.svg" alt="">
     </section>
-    <div>
-        <h1 class="title">Projects</h1>
-    </div>
+    <section class="desktop-p">
+        <div class="div1">
+            <h1 class="title title1">Projects</h1>
+        </div>
+        <div class="div2">
+            <div class="sub-div">
+                <img class="project1" src="./images/Rectangle21.svg" height="50%" alt="">
+                <p class="subtitle">Project name goes here</p>
+                <ul class="btn-list">
+                    <li class="tech-btn">HTML/CSS</li>
+                    <li class="tech-btn">Ruby on Rails</li>
+                    <li class="tech-btn">JavaScript</li>
+                </ul>
+                <button class="see-btn" type="button">See this project</button>
+            </div>
+        </div>
+        <div class="div3">
+            <img src="./images/Image2.svg" alt="">
+        </div>
+        <div class="div4">
+            
+        </div>
+        <div class="div5">
+            <div class="sub-div">
+                <p>Project name goes...</p>
+                <ul class="btn-list">
+                    <li class="tech-btn">HTML/CSS</li>
+                    <li class="tech-btn">Ruby on Rails</li>
+                    <li class="tech-btn">JavaScript</li>
+                </ul>
+                <button class="see-btn" type="button">See this project</button>
+                <img class="project1" src="./images/Image5.svg" alt="">
+            </div>
+        </div>
+        <div class="div6">
+            <img src="./images/Image3.svg" alt="">
+        </div>
+        <div class="div7">
+    
+        </div>
+        <div class="div8">
+            
+        </div>
+        <div class="div9">
+            
+        </div>
+        <div class="div10">
+            
+        </div>
+        <div class="div11">
+            <img src="./images/Image4.svg" alt="">
+        </div>
+    </section>
+
+    
     <section class="projects">
+        <div>
+            <h1 class="title">Projects</h1>
+        </div>
         <img class="project1" src="./images/Rectangle21.svg" alt="">
         <div class="sub-div">
             <p class="subtitle">Project name goes here</p>
@@ -97,9 +161,10 @@
             <button class="see-btn" type="button">See this project</button>
         </div>
     </section>
-    <section class="about">
-        <h1 class="title">About</h1>
-        <p class="presentation">
+    <section class="about1">
+        <div class="my-info">
+            <h1 class="title">About</h1>
+            <p class="presentation">
             Lorem ipsum dolor sit amet, 
             consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt 
@@ -107,61 +172,69 @@
             Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco 
             laboris nisi ut aliquip ea eiusmod
-        </p>
-        <button class="cvbtn" type="button">Get my CV</button>
+            </p>
+            <button class="cvbtn" type="button">Get my CV</button>
+        </div>
+        <div class="skills">
+            <div class="box" id="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>JavaScript (ES5/ES6)</li>
+                    <li>Ruby</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            <div class="box" id="frameworks">
+                <h2>Frameworks</h2>
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Ruby on rails</li>
+                    <li>Rspec</li>
+                    <li>Capibara</li>
+                    <li>Selenium</li>
+                </ul>
+            </div>
+            <div class="box" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Codekit</li>
+                    <li>Codepen</li>
+                    <li>GitHub</li>
+                    <li>GitLab</li>
+                    <li>Terminal</li>
+                </ul>
+            </div>
+            <div id="dots">
+            </div>
+        </div>
     </section>
-    <section class="skills">
-        <div class="box" id="languages">
-            <h2>Languages</h2>
+    <section class="started">
+        <img class="geometry-6" src="./images/image-geometry_6.svg" height="263px" alt="">
+        <form class="about" action="https://formspree.io/f/mknepban" method="post">
+            <img id="shapes-bottom" src="./images/shapes.svg" alt="">
+            <h2 class="title title2">Get Started</h2>
+            <p class="presentation presentation2">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna.</p>
             <ul>
-                <li>JavaScript (ES5/ES6)</li>
-                <li>Ruby</li>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>
+                    <label for="text">Your name</label>
+                    <input type="text" id="name" name="user_name" required />
+                </li>
+                <li>
+                    <label for="email">Your email</label>
+                    <input type="email" required>
+                </li>
+                <li id="t-area">
+                    <label for="message" id="message-label">Message</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Enter your message" maxlength="500" required></textarea>
+                </li>
             </ul>
-        </div>
-        <div class="box" id="frameworks">
-            <h2>Frameworks</h2>
-            <ul>
-                <li>Bootstrap</li>
-                <li>Ruby on rails</li>
-                <li>Rspec</li>
-                <li>Capibara</li>
-                <li>Selenium</li>
-            </ul>
-        </div>
-        <div class="box" id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Codekit</li>
-                <li>Codepen</li>
-                <li>GitHub</li>
-                <li>GitLab</li>
-                <li>Terminal</li>
-            </ul>
-        </div>
+            
+            <button class="start-btn start1" type="submit">Start collaboration</button>
+        </form>
     </section>
-    <form class="about" action="https://formspree.io/f/mknepban" method="post">
-        <img id="shapes-bottom" src="./images/shapes.svg" alt="">
-        <h2 class="title">Get Started</h2>
-        <p class="presentation">Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit, sed do eiusmod tempor
-             incididunt ut labore et dolore magna.</p>
-        <ul>
-            <li>
-                <label for="text">Your name</label>
-                <input type="text" id="name" name="user_name" required />
-            </li>
-            <li>
-                <label for="email">Your email</label>
-                <input type="email" required>
-            </li>
-            <li>
-                <textarea name="text" cols="30" rows="10" placeholder="Enter your message" maxlength="500" required></textarea>
-            </li>
-        </ul>
-        <button class="start-btn" type="submit">Start collaboration</button>
-     </form>
      <footer>
         <button type="button">Get my resume</button> 
         <ul>
