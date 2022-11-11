@@ -126,7 +126,7 @@ body {
     display: none;
   }
 
-  .geometry2 {
+  .geometry-desk {
     width: 50%;
   }
 
@@ -217,6 +217,11 @@ body {
   .desktop-p {
     display: none;
   }
+
+  .container,
+  .geometry-desk {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -224,23 +229,69 @@ body {
     display: none;
   }
 
-  .desktop-p {
-    margin-top: 5%;
+  .container {
+    margin-top: 7%;
+    margin-bottom: 7%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 5px 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.2fr 0.8fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.7fr 1.3fr 1.4fr 0.6fr 1.2fr 0.8fr 1fr 0.3fr 1.7fr 1.3fr;
+    gap: 0 0;
     grid-template-areas:
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . ."
-      ". . . . . . . .";
-    width: 100%;
+      "title title title title title project1 project1 project1 project1 project1 project1 project1 project1 project1 project1"
+      "title title title title title project1 project1 project1 project1 project1 project1 project1 project1 project1 project1"
+      "title title title title title project1 project1 project1 project1 project1 project1 project1 project1 project1 project1"
+      "title title title title title project1 project1 project1 project1 project1 project1 project1 project1 project1 project1"
+      "title title title title title project1 project1 project1 project1 project1 project1 project1 project1 project1 project1"
+      "title title title title title geometry1 geometry1 geometry1 geometry1 geometry1 project2 project2 project2 project2 project2"
+      "laptop1 laptop1 laptop1 laptop1 laptop1 geometry1 geometry1 geometry1 geometry1 geometry1 project2 project2 project2 project2 project2"
+      "laptop1 laptop1 laptop1 laptop1 laptop1 geometry1 geometry1 geometry1 geometry1 geometry1 project2 project2 project2 project2 project2"
+      "laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 . . project2 project2 project2 project2 project2"
+      "laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 . . project2 project2 project2 project2 project2"
+      "laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 geometry2 geometry2 geometry2 geometry2 geometry2 geometry2 geometry2"
+      "laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 geometry2 geometry2 geometry2 geometry2 geometry2 geometry2 geometry2"
+      "laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 laptop2 geometry2 geometry2 geometry2 geometry2 geometry2 geometry2 geometry2"
+      "geometry3 geometry3 geometry3 geometry3 geometry3 geometry3 geometry3 geometry3 laptop3 laptop3 laptop3 laptop3 laptop3 . ."
+      ". . . . . . . . laptop3 laptop3 laptop3 laptop3 laptop3 . .";
     height: 1600px;
+  }
+
+  .geometry1 {
+    grid-area: geometry1;
+    background-image: url(./images/image-geometry_2.svg);
+    background-repeat: no-repeat;
+  }
+
+  .laptop2 {
+    grid-area: laptop2;
+    background-image: url(./images/Image3.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .laptop1 {
+    grid-area: laptop1;
+    background-image: url(./images/Image2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project1 {
+    grid-area: project1;
+    background-color: #1a2236;
+    background-image: url(./images/Rectangle211.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .sub-div {
+    margin-top: 30%;
+  }
+
+  .p-title {
+    grid-area: title;
+    background-image: url(./images/image_dots.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
   }
 
   .title1 {
@@ -250,84 +301,36 @@ body {
     left: -13%;
   }
 
-  .div1 {
-    grid-column: span 3;
-    background-image: url(./images/image_dots.svg);
-    background-repeat: no-repeat;
-    background-position-x: right;
+  .geometry2 {
+    grid-area: geometry2;
+    background: url(./images/square.svg) bottom left no-repeat, url(./images/Group\ 83.svg) top right no-repeat;
   }
 
-  .div2 {
-    grid-column: span 5;
-    grid-row: span 1;
-  }
-
-  .project1 {
-    object-fit: cover;
-  }
-
-  .sub-div {
-    height: 530px;
-  }
-
-  .sub-div > p {
-    font-weight: 700;
-    font-size: 40px;
-  }
-
-  .btn-list > li {
-    font-size: 20px;
-    padding: 1%;
-  }
-
-  .div3 {
-    grid-column: span 2;
-  }
-
-  .div4 {
-    grid-column: span 3;
-    grid-row: span 2;
-    background-image: url(./images/image-geometry_2.svg);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-    height: 110%;
-  }
-
-  .div5 {
-    grid-column: span 3;
-    grid-row: span 3;
-    display: flex;
-  }
-
-  .div6 {
-    grid-column: span 4;
-    grid-row: span 3;
-  }
-
-  .div6 > img {
-    width: 100%;
-    height: 90%;
-    padding-top: 30px;
-  }
-
-  .div8 {
-    grid-column: span 4;
-    grid-row: span 3;
-    background-image: url(./images/image-geometry_3.svg);
-    background-repeat: no-repeat;
-    background-position-y: 75%;
-    background-position-x: right;
-  }
-
-  .div9 {
-    margin-top: 0%;
-    grid-column: span 4;
+  .geometry3 {
+    grid-area: geometry3;
     background: url(./images/image-geometry_5.svg) left no-repeat, url(./images/image-geometry_4.svg) right no-repeat;
+    background-size: contain;
   }
 
-  .div10 {
-    grid-column: span 4;
+  .project2 {
+    grid-area: project2;
+    background-color: #1a2236;
+    background-image: url(./images/Image5.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 2px solid white;
+  }
+
+  .p2 {
+    margin-top: 0%;
+  }
+
+  .laptop3 {
+    grid-area: laptop3;
+    background-image: url(./images/Image4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
