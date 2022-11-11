@@ -13,6 +13,10 @@ My personal portfolio
 
 Please follow this [Link](https://emmanuelcortes2.github.io/) or copy and paste in your browser https://emmanuelcortes2.github.io/. Thank you!
 
+## Project presentation video
+
+To watch a video presentation of this Portfolio Web Page click [here](https://www.loom.com/share/f2bf2cb3e1774a63a08acbf9dbb0972f) or copy & paste this ling: https://www.loom.com/share/f2bf2cb3e1774a63a08acbf9dbb0972f. 
+
 ## Getting Started
 
 >Step 1: If you don't have git installed on your machine you can download it from [here](https://git-scm.com/downloads).
