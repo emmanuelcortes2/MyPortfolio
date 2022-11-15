@@ -8,7 +8,6 @@
   margin-right: 16px;
 }
 
-
 @media (max-width: 768px) {
   #menu {
     position: absolute;
@@ -52,10 +51,15 @@
     top: 4%;
     right: 5%;
   }
+
+  .menu-desk {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
-  #hamburger {
+  #hamburger,
+  .menu {
     display: none;
   }
 
@@ -78,7 +82,7 @@
     height: 100px;
   }
 
-  .menu {
+  .menu-desk {
     width: 350px;
     display: flex;
     padding-top: 2vh;
@@ -329,6 +333,7 @@ body {
     background-image: url(./images/Rectangle211.png);
     background-repeat: no-repeat;
     background-size: contain;
+    
   }
 
   .sub-div {
@@ -368,6 +373,10 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     border: 2px solid white;
+  }
+
+  .subtitle {
+    font-size: 30px;
   }
 
   .p2 {
