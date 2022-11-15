@@ -9,7 +9,50 @@
 }
 
 @media (max-width: 768px) {
-  .menu {
+  #menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 250, 250, 1);
+    background-image: url(./images/image_geometry_menu_2.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #menu > li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 400;
+  }
+
+  .mobile-geo {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+  }
+
+  #close-icon {
+    position: absolute;
+    top: 4%;
+    right: 5%;
+  }
+
+  .menu-desk {
     display: none;
   }
 }
@@ -23,6 +66,18 @@
     display: none;
   }
 
+  #close-icon {
+    display: none;
+  }
+
+  .mobile-geo {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
   .nav-bar {
     justify-content: center;
     align-content: center;
@@ -30,7 +85,7 @@
     height: 100px;
   }
 
-  .menu {
+  .menu-desk {
     width: 350px;
     display: flex;
     padding-top: 2vh;
@@ -103,7 +158,6 @@ body {
 }
 
 .start-btn:hover {
-  border-style: 1px solid;
   border-color: rgba(26, 34, 54, 1);
   color: rgba(26, 34, 54, 1);
   background-color: white;
@@ -322,6 +376,10 @@ body {
     border: 2px solid white;
   }
 
+  .subtitle {
+    font-size: 30px;
+  }
+
   .p2 {
     margin-top: 0%;
   }
@@ -372,7 +430,6 @@ body {
 }
 
 .cvbtn:hover {
-  border-style: 1px solid;
   border-color: rgba(26, 34, 54, 1);
   color: rgba(26, 34, 54, 1);
   background-color: white;

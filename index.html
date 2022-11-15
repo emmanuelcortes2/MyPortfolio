@@ -18,16 +18,25 @@
     <header>
         <nav class="nav-bar">
             <img id="shapes" src="./images/shapes.svg" alt="">
-            <img id="hamburger" src="./images/ic_menu.svg" alt="">
-            <ul class="menu">
-                <li><a href="">Hello</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
+            
+            <img id="hamburger" onclick="toggle()" src="./images/ic_menu.svg" alt="">
+            <ul class="menu" id="menu">
+                <span><img src="./images/image_geometry_menu_1.svg" class="mobile-geo" alt=""></span>
+                <span><img src="./images/close.svg" id="close-icon" onclick="toggle()" alt="close_icon"></span>
+                <li><a onclick="toggle()" href="#headline">Hello</a></li>
+                <li><a onclick="toggle()" href="#projects">Portfolio</a></li>
+                <li><a onclick="toggle()" href="#about">About</a></li>
+                <li><a onclick="toggle()" href="#contact">Contact</a></li>
+            </ul>
+            <ul class="menu-desk" id="menu-desk">
+                <li><a href="#headline">Hello</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="headline">
+    <section class="headline" id="headline">
         <div class="hero">
           <h1 class="title">Emmanuel <br> Cortés</h1>
             <p class="presentation">Hello! I am a software developer! 
@@ -41,7 +50,7 @@
         <img class="geometry" src="./images/image_geometry.svg" alt="">
         <img class="geometry-desk" src="./images/image-geometry_1.svg" alt="">
     </section>
-    <div class="container">
+    <div class="container" id="projects">
         <div class="geometry1"></div>
         <div class="laptop2"></div>
         <div class="laptop1"></div>
@@ -72,7 +81,7 @@
         </div>
         <div class="laptop3"></div>
     </div>
-    <section class="projects">
+    <section class="projects" id="projects">
         <div>
             <h1 class="title">Projects</h1>
         </div>
@@ -137,7 +146,7 @@
             <button class="see-btn" type="button">See this project</button>
         </div>
     </section>
-    <section class="about1">
+    <section class="about1" id="about">
         <div class="my-info">
             <h1 class="title">About</h1>
             <p class="presentation">
@@ -185,7 +194,7 @@
             </div>
         </div>
     </section>
-    <section class="started">
+    <section class="started" id="contact">
         <img class="geometry-6" src="./images/image-geometry_6.svg" height="263px" alt="">
         <form class="about" action="https://formspree.io/f/mknepban" method="post">
             <img id="shapes-bottom" src="./images/shapes.svg" alt="">
@@ -223,4 +232,5 @@
         </ul>
      </footer>
 </body>
+<script src="app.js"></script>
 </html>
