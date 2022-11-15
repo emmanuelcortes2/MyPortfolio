@@ -411,6 +411,15 @@ body {
   padding-right: 25px;
 }
 
+.see-btn:hover {
+  background-color: white;
+  color: #1a2236;
+}
+
+.see-btn::selection {
+  border: 2px solid #1A2236;
+}
+
 .cvbtn {
   background-color: rgba(26, 34, 54, 1);
   background-image: url(./images/ic_download.svg);
@@ -732,7 +741,7 @@ footer > ul {
 
 .popup {
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
   color: rgba(26, 34, 54, 1);
@@ -778,6 +787,20 @@ footer > ul {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
+}
+
+#popBtn1 {
+  background-image: url(./images/Union-b.svg);
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  background-position-y: center;
+}
+
+#popBtn2 {
+  background-image: url(./images/git-b.svg);
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  background-position-y: center;
 }
 
 #img-popup {
