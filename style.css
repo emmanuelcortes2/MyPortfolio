@@ -58,8 +58,7 @@
 }
 
 @media (min-width: 768px) {
-  #hamburger,
-  .menu {
+  #hamburger {
     display: none;
   }
 
@@ -72,6 +71,10 @@
   }
 
   .mobile-geo {
+    display: none;
+  }
+
+  .menu {
     display: none;
   }
 
