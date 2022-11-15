@@ -155,7 +155,6 @@ body {
 }
 
 .start-btn:hover {
-  border-style: 1px solid;
   border-color: rgba(26, 34, 54, 1);
   color: rgba(26, 34, 54, 1);
   background-color: white;
@@ -333,7 +332,6 @@ body {
     background-image: url(./images/Rectangle211.png);
     background-repeat: no-repeat;
     background-size: contain;
-    
   }
 
   .sub-div {
@@ -429,7 +427,6 @@ body {
 }
 
 .cvbtn:hover {
-  border-style: 1px solid;
   border-color: rgba(26, 34, 54, 1);
   color: rgba(26, 34, 54, 1);
   background-color: white;
