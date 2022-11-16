@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -62,7 +63,7 @@
                     <li class="tech-btn">Ruby on Rails</li>
                     <li class="tech-btn">JavaScript</li>
                 </ul>
-                <button class="see-btn" type="button">See this project</button>
+                <button class="see-btn" onclick="popDesk()" type="button">See this project</button>
             </div>
         </div>
         <div class="p-title"><h1 class="title title1">Projects</h1></div>
@@ -76,11 +77,12 @@
                     <li class="tech-btn">Ruby on Rails</li>
                     <li class="tech-btn">JavaScript</li>
                 </ul>
-                <button class="see-btn" type="button">See this project</button>
+                <button class="see-btn" onclick="popDesk()" type="button">See this project</button>
             </div>
         </div>
         <div class="laptop3"></div>
     </div>
+    <div id="desk-popup"></div>
     <section class="projects" id="projects">
         <div>
             <h1 class="title">Projects</h1>
@@ -93,7 +95,7 @@
                 <li class="tech-btn">Ruby on Rails</li>
                 <li class="tech-btn">JavaScript</li>
             </ul>
-            <button class="see-btn" href="#popup" onclick="pop()" type="button">See this project</button>
+            <a class="see-btn"  href="#popup" onclick="pop()">See this project</a>
         </div>
         <img class="project1" src="./images/Image2.svg" alt="">
         <div class="sub-div">
@@ -103,7 +105,7 @@
                 <li class="tech-btn">Ruby on Rails</li>
                 <li class="tech-btn">JavaScript</li>
             </ul>
-            <button class="see-btn" type="button" onclick="pop()">See this project</button>
+            <a class="see-btn"  href="#popup" onclick="pop()">See this project</a>
         </div>
         <img class="project1" src="./images/Image3.svg" alt="">
         <div class="sub-div">
@@ -113,7 +115,7 @@
                 <li class="tech-btn">Ruby on Rails</li>
                 <li class="tech-btn">JavaScript</li>
             </ul>
-            <button class="see-btn" type="button" onclick="pop()">See this project</button>
+            <a class="see-btn" onclick="pop()" href="#popup">See this project</a>
         </div>
         <img class="project1" src="./images/Image4.svg" alt="">
         <div class="sub-div">
@@ -123,7 +125,7 @@
                 <li class="tech-btn">Ruby on Rails</li>
                 <li class="tech-btn">JavaScript</li>
             </ul>
-            <button class="see-btn" type="button" onclick="pop()">See this project</button>
+            <a class="see-btn"  href="#popup" onclick="pop()">See this project</a>
         </div>
         <img class="project1" src="./images/Image5.svg" alt="">
         <div class="sub-div">
@@ -133,9 +135,9 @@
                 <li class="tech-btn">Ruby on Rails</li>
                 <li class="tech-btn">JavaScript</li>
             </ul>
-            <button class="see-btn" type="button" onclick="pop()">See this project</button>
+            <a class="see-btn"  href="#popup" onclick="pop()">See this project</a>
         </div>
-        <img class="project1" src="./images/Image6.svg" alt="">
+        <img class="project1" href="#popup" src="./images/Image6.svg" alt="">
         <div class="sub-div">
             <p class="subtitle">Project name goes here</p>
             <ul class="btn-list">
@@ -143,7 +145,7 @@
                 <li class="tech-btn">Ruby on Rails</li>
                 <li class="tech-btn">JavaScript</li>
             </ul>
-            <button class="see-btn" type="button" onclick="pop()">See this project</button>
+            <a class="see-btn" href="#popup" onclick="pop()">See this project</a>
         </div>
         <div class="popup" id="popup"></div>
     </section>

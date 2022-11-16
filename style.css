@@ -230,8 +230,8 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 300;
-  padding-left: 16px;
   margin-top: 0%;
+  padding-left: 5%;
   margin-bottom: 0%;
   padding-bottom: 20px;
 }
@@ -401,14 +401,13 @@ body {
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 0;
+  padding-left: 2%;
   border: 1px solid;
-  width: 190px;
   background-image: url(./images/Union.svg);
   background-repeat: no-repeat;
   background-position-x: 95%;
   background-position-y: 50%;
-  padding-right: 25px;
+  padding-right: 50px;
 }
 
 .see-btn:hover {
@@ -417,7 +416,7 @@ body {
 }
 
 .see-btn::selection {
-  border: 2px solid #1A2236;
+  border: 2px solid #1a2236;
 }
 
 .cvbtn {
@@ -742,6 +741,8 @@ footer > ul {
 .popup {
   position: absolute;
   display: none;
+  left: 0%;
+  top: 80%;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
   color: rgba(26, 34, 54, 1);
@@ -778,7 +779,7 @@ footer > ul {
 
 .popup > button {
   background-color: transparent;
-  border: 1px solid #1A2236;
+  border: 1px solid #1a2236;
   width: 75%;
   padding-top: 4%;
   padding-bottom: 4%;
@@ -806,4 +807,122 @@ footer > ul {
 #img-popup {
   width: 90%;
   margin: 0 auto;
+}
+
+#desk-popup {
+  position: absolute;
+  top: 125%;
+  height: 230vh;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  border: 70px solid rgba(26, 34, 54, 0.95);
+  font-family: 'Poppins', sans-serif;
+  color: rgba(26, 34, 54, 1);
+}
+
+#closedesk-icon {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+#desk-popup > h2 {
+  font-size: 60px;
+  font-weight: 700;
+  padding-left: 5%;
+  margin-bottom: 0.5%;
+}
+
+#desk-popup > ul {
+  display: flex;
+  padding-left: 5%;
+  list-style: none;
+}
+
+#desk-popup > ul li {
+  border: 1px solid #1a2236;
+  margin-right: 2%;
+  padding: 0.5%;
+}
+
+#desk-graph {
+  width: 90%;
+  padding-top: 3%;
+  margin: 0 auto;
+}
+
+#desk-popup > p {
+  margin: 5% 25%;
+  font-size: 18px;
+}
+
+#btndiv {
+  margin-left: 25%;
+  display: flex;
+  gap: 4%;
+}
+
+#popBtn1-desk,
+#popBtn2-desk {
+  width: 25%;
+  background-color: transparent;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  font-size: 18px;
+  border: 1px solid  #1a2236;
+}
+
+#popBtn1-desk {
+  background-image: url(./images/Union-b.svg);
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  background-position-y: center;
+}
+
+#popBtn2-desk {
+  background-image: url(./images/git-b.svg);
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  background-position-y: center;
+}
+
+#fwdBck {
+  margin: 5% 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#fwd,
+#bck {
+  font-family: 'Poppins', sans-serif;
+  color: rgba(26, 34, 54, 1);
+  font-size: 18px;
+  font-weight: 300;
+  background-color: transparent;
+  border: none;
+}
+
+#fwd {
+  text-align: left;
+  width: 25%;
+  background-image: url(./images/fwd-arrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+
+#bck {
+  text-align: right;
+  width: 20%;
+  background-image: url(./images/bck-arrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+}
+
+@media (max-width: 768px) {
+  #desk-popup {
+    display: none;
+  }
 }
