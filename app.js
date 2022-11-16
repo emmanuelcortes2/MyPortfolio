@@ -91,6 +91,7 @@ const data = [
 function showProject(a) {
 
   const popUp = document.getElementById('popup');
+  popUp.style.display='flex';
 
   const close = document.createElement('img');
   popUp.appendChild(close);
@@ -136,6 +137,8 @@ function showProject(a) {
   popUp.appendChild(btn2);
   btn2.id = 'popBtn2';
   btn2.textContent = (data[a].btntext2);
+
+  console.log(a);
 }
 
 // desktop popup
