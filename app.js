@@ -1,3 +1,4 @@
+/* eslint-disable */
 function pop() {
   const y = document.getElementById('popup');
 
@@ -30,7 +31,7 @@ const data = [
     deskgraphic: './images/Group 104.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
-    btntext2: 'See source'
+    btntext2: 'See source',
   },
   {
     title: 'Project name goes here',
@@ -41,7 +42,7 @@ const data = [
     deskgraphic: './images/Group 104.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
-    btntext2: 'See source'
+    btntext2: 'See source',
   },
   {
     title: 'Project name goes here',
@@ -52,7 +53,7 @@ const data = [
     deskgraphic: './images/Group 104.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
-    btntext2: 'See source'
+    btntext2: 'See source',
   },
   {
     title: 'Project name goes here',
@@ -63,7 +64,7 @@ const data = [
     deskgraphic: './images/Group 104.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
-    btntext2: 'See source'
+    btntext2: 'See source',
   },
   {
     title: 'Project name goes here',
@@ -74,7 +75,7 @@ const data = [
     deskgraphic: './images/Group 104.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
-    btntext2: 'See source'
+    btntext2: 'See source',
   },
   {
     title: 'Project name goes here',
@@ -85,15 +86,13 @@ const data = [
     deskgraphic: './images/Group 104.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
-    btntext2: 'See source'
-  }
-]
-//mobile popup
+    btntext2: 'See source',
+  },
+];
 
 function showProject(a) {
-
   const popUp = document.getElementById('popup');
-  popUp.style.display='flex';
+  popUp.style.display = 'flex';
 
   const close = document.createElement('img');
   popUp.appendChild(close);
@@ -140,8 +139,6 @@ function showProject(a) {
   btn2.id = 'popBtn2';
   btn2.textContent = (data[a].btntext2);
 }
-
-// desktop popup
 
 const deskPop = document.getElementById('desk-popup');
 deskPop.id = 'desk-popup';
@@ -209,7 +206,6 @@ fwdBck.appendChild(fwd);
 fwd.id = 'fwd';
 fwd.textContent = 'Previous project';
 
-/* eslint-disable */
 function toggle() {
   const x = document.getElementById('menu');
 
