@@ -740,14 +740,17 @@ footer > ul {
 
 .popup {
   position: absolute;
-  display: none;
+  display: flex;
   left: 0%;
-  top: 80%;
+  top: 79%;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
   color: rgba(26, 34, 54, 1);
   background-color: white;
   height: 150vh;
+  border-top: 55px solid;
+  border-bottom: 55px solid;
+  bor
 }
 
 .popup > h2 {
@@ -812,7 +815,7 @@ footer > ul {
 #desk-popup {
   position: absolute;
   top: 125%;
-  height: 230vh;
+  height: 215vh;
   background-color: white;
   display: none;
   flex-direction: column;
