@@ -6,6 +6,8 @@ function pop() {
   } else {
     y.style.display = 'none';
   }
+
+  window.location.reload();
 }
 
 function popDesk() {
@@ -137,8 +139,6 @@ function showProject(a) {
   popUp.appendChild(btn2);
   btn2.id = 'popBtn2';
   btn2.textContent = (data[a].btntext2);
-
-  console.log(a);
 }
 
 // desktop popup
