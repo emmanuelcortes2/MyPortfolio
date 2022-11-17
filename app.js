@@ -258,7 +258,6 @@ function showProject(a) {
 }
 
 function showProjectd(b) {
-
   const deskPop = document.getElementById('desk-popup');
   deskPop.id = 'desk-popup';
   deskPop.style.display = 'flex';
@@ -338,3 +337,17 @@ function toggle() {
     x.style.display = 'flex';
   }
 }
+
+const form = document.getElementById('contact');
+const email = document.getElementById('email');
+const eMessage = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  if (email.value === email.value.toLowerCase()) {
+    eMessage.textContent = '';
+  } else {
+    e.preventDefault();
+    eMessage.textContent = 'The email must be in lowercase';
+    eMessage.style.display = 'block';
+  }
+});

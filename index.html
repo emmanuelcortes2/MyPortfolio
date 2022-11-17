@@ -107,7 +107,7 @@
     </section>
     <section class="started" id="contact">
         <img class="geometry-6" src="./images/image-geometry_6.svg" height="263px" alt="">
-        <form class="about" action="https://formspree.io/f/mknepban" method="post">
+        <form class="about" id="contact" action="https://formspree.io/f/mknepban" method="post">
             <img id="shapes-bottom" src="./images/shapes.svg" alt="">
             <h2 class="title title2">Get Started</h2>
             <p class="presentation presentation2">Lorem ipsum dolor sit amet, 
@@ -120,15 +120,15 @@
                 </li>
                 <li>
                     <label for="email">Your email</label>
-                    <input type="email" required>
+                    <input type="email" id="email" required>
                 </li>
                 <li id="t-area">
                     <label for="message" id="message-label">Message</label>
                     <textarea name="message" cols="30" rows="10" placeholder="Enter your message" maxlength="500" required></textarea>
                 </li>
             </ul>
-            
             <button class="start-btn start1" type="submit">Start collaboration</button>
+            <small id="error"></small>
         </form>
     </section>
      <footer>
