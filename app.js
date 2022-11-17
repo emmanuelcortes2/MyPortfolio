@@ -19,6 +19,8 @@ function popDesk() {
   } else {
     z.style.display = 'flex';
   }
+
+  window.location.reload();
 }
 
 const data = [
@@ -28,7 +30,7 @@ const data = [
     badge2: 'Ruby on Rails',
     badge3: 'JavaScript',
     graphic: './images/Rectangle21.svg',
-    deskgraphic: './images/Group 104.svg',
+    deskgraphic: './images/Rectangle21.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
@@ -41,7 +43,7 @@ const data = [
     badge2: 'Ruby on Rails',
     badge3: 'JavaScript',
     graphic: './images/Image2.svg',
-    deskgraphic: './images/Group 104.svg',
+    deskgraphic: './images/Image2.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
@@ -54,7 +56,7 @@ const data = [
     badge2: 'Ruby on Rails',
     badge3: 'JavaScript',
     graphic: './images/Image3.svg',
-    deskgraphic: './images/Group 104.svg',
+    deskgraphic: './images/Image3.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
@@ -67,7 +69,7 @@ const data = [
     badge2: 'Ruby on Rails',
     badge3: 'JavaScript',
     graphic: './images/Image4.svg',
-    deskgraphic: './images/Group 104.svg',
+    deskgraphic: './images/Image4.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
@@ -80,7 +82,7 @@ const data = [
     badge2: 'Ruby on Rails',
     badge3: 'JavaScript',
     graphic: './images/Image5.svg',
-    deskgraphic: './images/Group 104.svg',
+    deskgraphic: './images/Image5.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
@@ -93,7 +95,7 @@ const data = [
     badge2: 'Ruby on Rails',
     badge3: 'JavaScript',
     graphic: './images/Image6.svg',
-    deskgraphic: './images/Group 104.svg',
+    deskgraphic: './images/Image6.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
@@ -114,7 +116,7 @@ desktopP = `
               <li class="tech-btn">${data[0].badge2}</li>
               <li class="tech-btn">${data[0].badge3}</li>
           </ul>
-          <button class="see-btn" onclick="popDesk()" type="button">See this project</button>
+          <button class="see-btn" onclick="showProjectd(0)" type="button">See this project</button>
       </div>
       </div>
       <div class="p-title"><h1 class="title title1">Projects</h1></div>
@@ -128,7 +130,7 @@ desktopP = `
               <li class="tech-btn">${data[0].badge2}</li>
               <li class="tech-btn">${data[0].badge3}</li>
           </ul>
-          <button class="see-btn" onclick="popDesk()" type="button">See this project</button>
+          <button class="see-btn" onclick="showProjectd(2)" type="button">See this project</button>
         </div>
         </div>
         <div class="laptop3"></div>`;
@@ -255,73 +257,77 @@ function showProject(a) {
   btn2.textContent = (data[a].btntext2);
 }
 
-const deskPop = document.getElementById('desk-popup');
-deskPop.id = 'desk-popup';
+function showProjectd(b) {
 
-const closedesk = document.createElement('img');
-deskPop.appendChild(closedesk);
-closedesk.src = './images/close.svg';
-closedesk.height = '30';
-closedesk.id = 'closedesk-icon';
-closedesk.onclick = popDesk;
+  const deskPop = document.getElementById('desk-popup');
+  deskPop.id = 'desk-popup';
+  deskPop.style.display = 'flex';
 
-const titledesk = document.createElement('h2');
-deskPop.appendChild(titledesk);
-titledesk.textContent = (data[1].title);
+  const closedesk = document.createElement('img');
+  deskPop.appendChild(closedesk);
+  closedesk.src = './images/close.svg';
+  closedesk.height = '30';
+  closedesk.id = 'closedesk-icon';
+  closedesk.onclick = popDesk;
 
-const badgesdesk = document.createElement('ul');
-deskPop.appendChild(badgesdesk);
+  const titledesk = document.createElement('h2');
+  deskPop.appendChild(titledesk);
+  titledesk.textContent = (data[b].title);
 
-const listAdesk = document.createElement('li');
-badgesdesk.appendChild(listAdesk);
-listAdesk.textContent = (data[1].badge1);
+  const badgesdesk = document.createElement('ul');
+  deskPop.appendChild(badgesdesk);
 
-const listBdesk = document.createElement('li');
-badgesdesk.appendChild(listBdesk);
-listBdesk.textContent = (data[1].badge2);
+  const listAdesk = document.createElement('li');
+  badgesdesk.appendChild(listAdesk);
+  listAdesk.textContent = (data[b].badge1);
 
-const listCdesk = document.createElement('li');
-badgesdesk.appendChild(listCdesk);
-listCdesk.textContent = (data[1].badge3);
+  const listBdesk = document.createElement('li');
+  badgesdesk.appendChild(listBdesk);
+  listBdesk.textContent = (data[b].badge2);
 
-const deskGraph = document.createElement('img');
-deskPop.appendChild(deskGraph);
-deskGraph.src = (data[1].deskgraphic);
-deskGraph.id = 'desk-graph';
+  const listCdesk = document.createElement('li');
+  badgesdesk.appendChild(listCdesk);
+  listCdesk.textContent = (data[b].badge3);
 
-const paragraphDesk = document.createElement('p');
-deskPop.appendChild(paragraphDesk);
-paragraphDesk.textContent = (data[1].text);
+  const deskGraph = document.createElement('img');
+  deskPop.appendChild(deskGraph);
+  deskGraph.src = data[b].deskgraphic;
+  deskGraph.id = 'desk-graph';
 
-const btndiv = document.createElement('div');
-deskPop.appendChild(btndiv);
-btndiv.id = 'btndiv';
+  const paragraphDesk = document.createElement('p');
+  deskPop.appendChild(paragraphDesk);
+  paragraphDesk.textContent = (data[b].text);
 
-const btndesk1 = document.createElement('a');
-btndiv.appendChild(btndesk1);
-btndesk1.id = 'popBtn1-desk';
-btndesk1.href = (data[1].link2);
-btndesk1.textContent = (data[1].btntext1);
+  const btndiv = document.createElement('div');
+  deskPop.appendChild(btndiv);
+  btndiv.id = 'btndiv';
 
-const btndesk2 = document.createElement('a');
-btndiv.appendChild(btndesk2);
-btndesk2.id = 'popBtn2-desk';
-btndesk2.href = (data[1].link1);
-btndesk2.textContent = (data[1].btntext2);
+  const btndesk1 = document.createElement('a');
+  btndiv.appendChild(btndesk1);
+  btndesk1.id = 'popBtn1-desk';
+  btndesk1.href = (data[b].link2);
+  btndesk1.textContent = (data[b].btntext1);
 
-const fwdBck = document.createElement('div');
-deskPop.appendChild(fwdBck);
-fwdBck.id = 'fwdBck';
+  const btndesk2 = document.createElement('a');
+  btndiv.appendChild(btndesk2);
+  btndesk2.id = 'popBtn2-desk';
+  btndesk2.href = (data[b].link1);
+  btndesk2.textContent = (data[b].btntext2);
 
-const bck = document.createElement('button');
-fwdBck.appendChild(bck);
-bck.id = 'bck';
-bck.textContent = 'Next project';
+  const fwdBck = document.createElement('div');
+  deskPop.appendChild(fwdBck);
+  fwdBck.id = 'fwdBck';
 
-const fwd = document.createElement('button');
-fwdBck.appendChild(fwd);
-fwd.id = 'fwd';
-fwd.textContent = 'Previous project';
+  const bck = document.createElement('button');
+  fwdBck.appendChild(bck);
+  bck.id = 'bck';
+  bck.textContent = 'Next project';
+
+  const fwd = document.createElement('button');
+  fwdBck.appendChild(fwd);
+  fwd.id = 'fwd';
+  fwd.textContent = 'Previous project';
+}
 
 function toggle() {
   const x = document.getElementById('menu');
