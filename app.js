@@ -32,6 +32,8 @@ const data = [
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
+    link1: 'https://github.com/emmanuelcortes2/emmanuelcortes2.github.io',
+    link2: 'https://emmanuelcortes2.github.io/',
   },
   {
     title: 'Project name goes here',
@@ -43,6 +45,8 @@ const data = [
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
+    link1: 'https://github.com/emmanuelcortes2/emmanuelcortes2.github.io',
+    link2: 'https://emmanuelcortes2.github.io/',
   },
   {
     title: 'Project name goes here',
@@ -54,6 +58,8 @@ const data = [
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
+    link1: 'https://github.com/emmanuelcortes2/emmanuelcortes2.github.io',
+    link2: 'https://emmanuelcortes2.github.io/',
   },
   {
     title: 'Project name goes here',
@@ -65,6 +71,8 @@ const data = [
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
+    link1: 'https://github.com/emmanuelcortes2/emmanuelcortes2.github.io',
+    link2: 'https://emmanuelcortes2.github.io/',
   },
   {
     title: 'Project name goes here',
@@ -76,6 +84,8 @@ const data = [
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
+    link1: 'https://github.com/emmanuelcortes2/emmanuelcortes2.github.io',
+    link2: 'https://emmanuelcortes2.github.io/',
   },
   {
     title: 'Project name goes here',
@@ -87,6 +97,8 @@ const data = [
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
     btntext1: 'See live',
     btntext2: 'See source',
+    link1: 'https://github.com/emmanuelcortes2/emmanuelcortes2.github.io',
+    link2: 'https://emmanuelcortes2.github.io/',
   },
 ];
 
@@ -121,9 +133,9 @@ desktopP = `
         </div>
         <div class="laptop3"></div>`;
 
-document.getElementById("projects").innerHTML = desktopP;
+document.getElementById('projects').innerHTML = desktopP;
 
-mobileP =`
+mobileP = `
      <div>
      <h1 class="title">Projects</h1>
      </div>
@@ -186,9 +198,10 @@ mobileP =`
            <li class="tech-btn">${data[5].badge3}</li>
        </ul>
        <a class="see-btn" href="#popup" onclick="showProject(5)">See this project</a>
-     </div>`;
+     </div>
+     <div class="popup" id="popup"></div>`;
 
-document.getElementById("projects-m").innerHTML = mobileP;
+document.getElementById('projects-m').innerHTML = mobileP;
 
 function showProject(a) {
   const popUp = document.getElementById('popup');
@@ -229,14 +242,16 @@ function showProject(a) {
   popUp.appendChild(paragraph);
   paragraph.textContent = (data[a].text);
 
-  const btn1 = document.createElement('button');
+  const btn1 = document.createElement('a');
   popUp.appendChild(btn1);
   btn1.id = 'popBtn1';
+  btn1.href = (data[a].link2);
   btn1.textContent = (data[a].btntext1);
 
-  const btn2 = document.createElement('button');
+  const btn2 = document.createElement('a');
   popUp.appendChild(btn2);
   btn2.id = 'popBtn2';
+  btn2.href = (data[a].link1);
   btn2.textContent = (data[a].btntext2);
 }
 
@@ -282,14 +297,16 @@ const btndiv = document.createElement('div');
 deskPop.appendChild(btndiv);
 btndiv.id = 'btndiv';
 
-const btndesk1 = document.createElement('button');
+const btndesk1 = document.createElement('a');
 btndiv.appendChild(btndesk1);
 btndesk1.id = 'popBtn1-desk';
+btndesk1.href = (data[1].link2);
 btndesk1.textContent = (data[1].btntext1);
 
-const btndesk2 = document.createElement('button');
+const btndesk2 = document.createElement('a');
 btndiv.appendChild(btndesk2);
 btndesk2.id = 'popBtn2-desk';
+btndesk2.href = (data[1].link1);
 btndesk2.textContent = (data[1].btntext2);
 
 const fwdBck = document.createElement('div');

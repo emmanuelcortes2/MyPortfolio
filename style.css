@@ -779,7 +779,7 @@ footer > ul {
   margin-bottom: 10%;
 }
 
-.popup > button {
+.popup > a {
   background-color: transparent;
   border: 1px solid #1a2236;
   width: 75%;
@@ -880,6 +880,7 @@ footer > ul {
   background-repeat: no-repeat;
   background-position-x: 85%;
   background-position-y: center;
+  text-align: center;
 }
 
 #popBtn2-desk {
@@ -887,6 +888,7 @@ footer > ul {
   background-repeat: no-repeat;
   background-position-x: 85%;
   background-position-y: center;
+  text-align: center;
 }
 
 #fwdBck {
