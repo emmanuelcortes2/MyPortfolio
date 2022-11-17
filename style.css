@@ -930,3 +930,27 @@ footer > ul {
     display: none;
   }
 }
+
+@media (min-width: 768px) {
+  small {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgba(244, 56, 56, 1);
+    border: 2px solid rgba(244, 56, 56, 1);
+    border-radius: 10px;
+    padding: 0.8%;
+    margin-top: 10%;
+    background-color: white;
+  }
+}
+
+small {
+  font-family: 'Poppins', sans-serif;
+  color: rgba(244, 56, 56, 1);
+  border: 2px solid rgba(244, 56, 56, 1);
+  border-radius: 10px;
+  padding: 0.8%;
+  background-color: white;
+  margin: 0 auto;
+}

@@ -258,7 +258,6 @@ function showProject(a) {
 }
 
 function showProjectd(b) {
-
   const deskPop = document.getElementById('desk-popup');
   deskPop.id = 'desk-popup';
   deskPop.style.display = 'flex';
