@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
 </head>
-<body>
+<body onload="showProject()">
     <header>
         <nav class="nav-bar">
             <img id="shapes" src="./images/shapes.svg" alt="">
@@ -52,39 +52,10 @@
         <img class="geometry-desk" src="./images/image-geometry_1.svg" alt="">
     </section>
     <div class="container" id="projects">
-        <div class="geometry1"></div>
-        <div class="laptop2"></div>
-        <div class="laptop1"></div>
-        <div class="project1">
-            <div class="sub-div">
-                <p class="subtitle">Project name goes here</p>
-                <ul class="btn-list">
-                    <li class="tech-btn">HTML/CSS</li>
-                    <li class="tech-btn">Ruby on Rails</li>
-                    <li class="tech-btn">JavaScript</li>
-                </ul>
-                <button class="see-btn" onclick="popDesk()" type="button">See this project</button>
-            </div>
-        </div>
-        <div class="p-title"><h1 class="title title1">Projects</h1></div>
-        <div class="geometry2"></div>
-        <div class="geometry3"></div>
-        <div class="project2">
-            <div class="sub-div p2">
-                <p class="subtitle">Project name goes here</p>
-                <ul class="btn-list">
-                    <li class="tech-btn">HTML/CSS</li>
-                    <li class="tech-btn">Ruby on Rails</li>
-                    <li class="tech-btn">JavaScript</li>
-                </ul>
-                <button class="see-btn" onclick="popDesk()" type="button">See this project</button>
-            </div>
-        </div>
-        <div class="laptop3"></div>
     </div>
     <div id="desk-popup"></div>
-    <section class="projects" id="projects">
-        <div>
+    <section class="projects" id="projects-m">
+        <!-- <div>
             <h1 class="title">Projects</h1>
         </div>
         <img class="project1" src="./images/Rectangle21.svg" alt="">
@@ -146,7 +117,7 @@
                 <li class="tech-btn">JavaScript</li>
             </ul>
             <a class="see-btn" href="#popup" onclick="showProject(5)">See this project</a>
-        </div>
+        </div> -->
         <div class="popup" id="popup"></div>
     </section>
     <section class="about1" id="about">
@@ -233,7 +204,7 @@
             <li><img src="./images/ic_medium.svg" alt=""></li>
             <li><img src="./images/ic_angellist.svg" alt=""></li>
         </ul>
-     </footer>
+     </footer> 
 </body>
 <script src="app.js"></script>
 </html>

@@ -90,6 +90,106 @@ const data = [
   },
 ];
 
+desktopP = `
+    <div class="geometry1"></div>
+    <div class="laptop2"></div>
+    <div class="laptop1"></div>
+    <div class="project1">
+      <div class="sub-div">
+          <p class="subtitle">${data[0].title}</p>
+          <ul class="btn-list">
+              <li class="tech-btn">${data[0].badge1}</li>
+              <li class="tech-btn">${data[0].badge2}</li>
+              <li class="tech-btn">${data[0].badge3}</li>
+          </ul>
+          <button class="see-btn" onclick="popDesk()" type="button">See this project</button>
+      </div>
+      </div>
+      <div class="p-title"><h1 class="title title1">Projects</h1></div>
+      <div class="geometry2"></div>
+      <div class="geometry3"></div>
+      <div class="project2">
+        <div class="sub-div p2">
+          <p class="subtitle">${data[0].title}</p>
+          <ul class="btn-list">
+              <li class="tech-btn">${data[0].badge1}</li>
+              <li class="tech-btn">${data[0].badge2}</li>
+              <li class="tech-btn">${data[0].badge3}</li>
+          </ul>
+          <button class="see-btn" onclick="popDesk()" type="button">See this project</button>
+        </div>
+        </div>
+        <div class="laptop3"></div>`;
+
+document.getElementById("projects").innerHTML = desktopP;
+
+mobileP =`
+     <div>
+     <h1 class="title">Projects</h1>
+     </div>
+     <img class="project1" src="${data[0].graphic}" alt="">
+     <div class="sub-div">
+       <p class="subtitle">${data[0].title}</p>
+       <ul class="btn-list">
+           <li class="tech-btn">${data[0].badge1}</li>
+           <li class="tech-btn">${data[0].badge2}</li>
+           <li class="tech-btn">${data[0].badge3}</li>
+       </ul>
+       <a class="see-btn" href="#popup" onclick="showProject(0)">See this project</a>
+     </div>
+     <img class="project1" src="${data[1].graphic}" alt="">
+     <div class="sub-div">
+       <p class="subtitle">${data[1].title}</p>
+       <ul class="btn-list">
+           <li class="tech-btn">${data[1].badge1}</li>
+           <li class="tech-btn">${data[1].badge2}</li>
+           <li class="tech-btn">${data[1].badge3}</li>
+       </ul>
+       <a class="see-btn" href="#popup" onclick="showProject(1)">See this project</a>
+     </div>
+     <img class="project1" src="${data[2].graphic}" alt="">
+     <div class="sub-div">
+       <p class="subtitle">${data[2].title}</p>
+       <ul class="btn-list">
+           <li class="tech-btn">${data[2].badge1}</li>
+           <li class="tech-btn">${data[2].badge2}</li>
+           <li class="tech-btn">${data[2].badge3}</li>
+       </ul>
+       <a class="see-btn" href="#popup" onclick="showProject(2)">See this project</a>
+     </div>
+     <img class="project1" src="${data[3].graphic}" alt="">
+     <div class="sub-div">
+       <p class="subtitle">${data[3].title}</p>
+       <ul class="btn-list">
+           <li class="tech-btn">${data[3].badge1}</li>
+           <li class="tech-btn">${data[3].badge2}</li>
+           <li class="tech-btn">${data[3].badge3}</li>
+       </ul>
+       <a class="see-btn" href="#popup" onclick="showProject(3)">See this project</a>
+     </div>
+     <img class="project1" src="${data[4].graphic}" alt="">
+     <div class="sub-div">
+       <p class="subtitle">${data[4].title}</p>
+       <ul class="btn-list">
+           <li class="tech-btn">${data[4].badge1}</li>
+           <li class="tech-btn">${data[4].badge2}</li>
+           <li class="tech-btn">${data[4].badge3}</li>
+       </ul>
+       <a class="see-btn"  href="#popup" onclick="showProject(4)">See this project</a>
+     </div>
+     <img class="project1" href="#popup" src="${data[5].graphic}" alt="">
+     <div class="sub-div">
+       <p class="subtitle">${data[5].title}</p>
+       <ul class="btn-list">
+           <li class="tech-btn">${data[5].badge1}</li>
+           <li class="tech-btn">${data[5].badge2}</li>
+           <li class="tech-btn">${data[5].badge3}</li>
+       </ul>
+       <a class="see-btn" href="#popup" onclick="showProject(5)">See this project</a>
+     </div>`;
+
+document.getElementById("projects-m").innerHTML = mobileP;
+
 function showProject(a) {
   const popUp = document.getElementById('popup');
   popUp.style.display = 'flex';
