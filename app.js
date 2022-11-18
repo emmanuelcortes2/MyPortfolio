@@ -19,8 +19,6 @@ function popDesk() {
   } else {
     z.style.display = 'flex';
   }
-
-  window.location.reload();
 }
 
 const data = [
@@ -197,7 +195,7 @@ mobileP = `
        <ul class="btn-list">
            <li class="tech-btn">${data[5].badge1}</li>
            <li class="tech-btn">${data[5].badge2}</li>
-           <li class="tech-btn">${data[5].badge3}</li>
+           <li class="tech-btn">${data[a].badge3}</li>
        </ul>
        <a class="see-btn" href="#popup" onclick="showProject(5)">See this project</a>
      </div>
@@ -331,10 +329,10 @@ function showProjectd(b) {
 function toggle() {
   const x = document.getElementById('menu');
 
-  if (x.style.display === 'flex') {
-    x.style.display = 'none';
-  } else {
+  if (x.style.display === 'none') {
     x.style.display = 'flex';
+  } else {
+    x.style.display = 'none';
   }
 }
 
@@ -351,3 +349,24 @@ form.addEventListener('submit', (e) => {
     eMessage.style.display = 'block';
   }
 });
+
+const nameIn = document.getElementById('name');
+const message = document.getElementById('message');
+
+form.addEventListener('input', () => {
+  const valuesObj = {
+    nameValue: nameIn.value,
+    emailValue: email.value,
+    textAreaValue: message.value,
+  };
+  localStorage.setItem('userFormDataCollected', JSON.stringify(valuesObj));
+});
+
+let getData = localStorage.getItem('userFormDataCollected');
+getData = JSON.parse(getData);
+
+if (getData != null) {
+  nameIn.value = getData.nameValue;
+  email.value = getData.emailValue;
+  message.value = getData.textAreaValue;
+}
