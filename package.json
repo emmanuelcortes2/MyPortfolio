@@ -25,7 +25,6 @@
     "hint": "^2.0.0",
     "stylelint": "^17.0.0",
     "stylelint-config-standard": "^40.0.0",
-    "stylelint-csstree-validator": "^3.0.0",
     "stylelint-scss": "^7.0.0"
   }
 }
