@@ -8,6 +8,14 @@
   margin-right: 16px;
 }
 
+.github,
+.stackoverflow,
+.linkedin,
+.medium,
+.get-cv {
+  cursor: pointer;
+}
+
 @media (width <= 768px) {
   #menu {
     position: absolute;
