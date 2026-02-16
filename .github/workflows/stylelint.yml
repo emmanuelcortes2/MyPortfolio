@@ -1,0 +1,39 @@
+name: Stylelint CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  stylelint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Stylelint
+        run: npm install -g stylelint
+
+      - name: Lint code
+        run: npx stylelint "**/*.scss, **/*.css" --formatter json --output-file stylelint-results.json
+        env:
+          NODE_OPTIONS: --max-old-space-size=8192
+
+      - name: Upload linting results
+        uses: actions/upload-artifact@v4
+        with:
+          name: stylelint-results
+          path: stylelint-results.json
